@@ -1,0 +1,110 @@
+body {
+    background-image: url(../assets/Backgrounds/pexels-photo-414171.jpeg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+#TopOfBox {
+    z-index: 10;
+    position: relative;
+    top: -80px;
+    height: 100px;
+    width: 500px;
+    background-image: url(../assets/BackdropClouds.png);
+}
+
+#Loopy {
+    z-index: 9;
+    position: absolute;
+    top: -64px;
+    width: 64px;
+    height: 64px;
+    right: 10px;
+    background-image: url(../assets/plane.png);
+    animation-name: LoopyLoop;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    transform-origin: top left;
+    animation-delay: 1s;
+}
+
+@keyframes LoopyLoop {
+    0% {
+        transform: rotate(0deg);
+    }
+    80% {
+        transform: rotate(-359deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes TransparentBoxEnlarge {
+    0% {
+        width: 500px;
+        height: 400px;
+    }
+    100% {
+        width: 90%;
+        height: 80%;
+    }
+}
+
+#MainInfo {
+    top: 20px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-family: 'Spectral SC', serif;
+    line-height: 10px;
+    z-index: 5;
+}
+
+#GreenBox {
+    width: 200%;
+    height: 400%;
+    position: absolute;
+    background-color: greenyellow;
+    top: -200%;
+    left: -300%;
+    transform: rotate(15deg);
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes GreenBoxPop {
+    0% {
+        top: -400%;
+        left: 0%;
+    }
+    100% {
+        top: 200%;
+        left: -100%;
+    }
+}
+
+#NewKeyScreen {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+#keySize {
+    width: 60%;
+}
+
+#LoginBox {
+    height: 450px;
+}
+
+#Keystuff {
+    font-family: 'Roboto', sans-serif;
+}
+
+#keySizeText {
+    font-family: 'Roboto', sans-serif;
+}
