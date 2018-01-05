@@ -112,6 +112,20 @@
     background-color: rgb(25, 76, 94);
 }
 
+.slider::-webkit-slider-thumb {
+    width: 16px;
+    height: 16px;
+    border: 0;
+    border-radius: 50%;
+    background-color: rgb(53, 138, 167);
+    cursor: pointer;
+    transition: background .15s ease-in-out;
+}
+
+.slider::-webkit-slider-thumb:active {
+    background-color: rgb(25, 76, 94);
+}
+
 .slider {
     margin-top: 12.5px;
 }
