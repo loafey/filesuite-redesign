@@ -32,7 +32,7 @@
 }
 
 .FlatInputText:focus {
-    border-bottom: 1px solid rgb(65, 65, 65);
+    border-bottom: 1px solid rgb(153, 153, 153);
     width: 90%;
 }
 
@@ -96,4 +96,22 @@
     height: 100%;
     width: 100%;
     background-image: url(../assets/Backgrounds/mountain-top-peek-black-585558.jpeg)
+}
+
+.slider::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    border: 0;
+    border-radius: 50%;
+    background-color: rgb(53, 138, 167);
+    cursor: pointer;
+    transition: background .15s ease-in-out;
+}
+
+.slider::-moz-range-thumb:active {
+    background-color: rgb(25, 76, 94);
+}
+
+.slider {
+    margin-top: 12.5px;
 }

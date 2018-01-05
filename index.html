@@ -4,58 +4,40 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>FileSuite Login</title>
+    <title>FileSuite gui Example</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/index.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Spectral+SC" rel="stylesheet">
-
-    <script src="js/index.js"></script>
+    <style>
+        #TopBar {
+            position: fixed;
+            padding: 0;
+            margin: 0;
+            top: 0;
+            left: 0;
+            background-color: rgb(0, 255, 170);
+            height: 100px;
+            width: 100%;
+            border-bottom: 2px solid rgb(0, 0, 0);
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+            z-index: 100;
+        }
+        
+        #Page {
+            position: absolute;
+            margin: auto;
+            top: 0;
+            left: 0;
+            width: 99.99%;
+            height: 99.99%;
+            align-content: center;
+        }
+    </style>
 </head>
 
 <body>
-    <!--Login screen-->
-    <div class="BlurBehind"></div>
-    <div id="BigBox" class="TransparentBox">
-        <div id="MainInfo">
-            <h1>FileSuite</h1>
-            <h2>Login</h2>
-            <div id="InputInfo">
-                <input class="FlatInputText" placeholder="Username" id="Username" type="text">
-                <input class="FlatInputText" placeholder="Password" id="Password" type="password">
-                <button class="FlatButtonLarge" id="LoginButton" type="button">Login</button>
-                <button onclick="GreenPop()" class="FlatButtonLarge" id="NewKeyButton" type="button">New Key</button>
-                <a target="blank_" href="https://bitbucket.org/samhamnam/">About</a>
-            </div>
-        </div>
-        <div id="TopOfBox"></div>
-        <diV id="Loopy">
-            <img src="/assets/plane.png">
-        </diV>
-        <div class="BlurBox"></div>
+    <div id="TopBar"></div>
+    <div id="Page">
+        <iframe src="login.html" frameborder="0" width="99.9%" height="99.9%" align="center"></iframe>
     </div>
-    <div id="GreenBox" style="z-index: 100;"></div>
-    <!--New key-->
-    <div id="NewKeyScreen" style="display:none; z-index:15;">
-        <div class="BlurBehind" style="background-image: url(assets/Backgrounds/pexels-photo-714256.jpeg); transform: scale(1.03); size: 100%; filter: blur(0px);"></div>
-        <div id="LoginBox" class="TransparentBox ">
-            <div id="MainInfo">
-                <h1>New key</h1>
-                <div id="InputInfo">
-                    <input class="FlatInputText" placeholder="Username" id="Username" type="text">
-                    <input class="FlatInputText" placeholder="Password" id="Password" type="password">
-                    <p id="Keystuff">Keysize:
-                        <p id="keySizeText">2048</p>
-                    </p>
-                    <input type="range" min="1" max="3" value="2" class="slider" id="keySize">
-                    <button class="FlatButtonLarge" id="LoginButton" type="button">Create Key</button>
-                    <button onclick="GreenDis()" class="FlatButtonLarge" id="CancelButton" type="button">Cancel</button>
-                </div>
-            </div>
-            <div id="TopOfBox"></div>
-        </div>
-    </div>
-
 </body>
 
 </html>

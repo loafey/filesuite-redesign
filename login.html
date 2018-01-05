@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FileSuite Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Spectral+SC" rel="stylesheet">
+</head>
+
+<body>
+    <!--Login screen-->
+    <div class="BlurBehind"></div>
+    <div id="BigBox" class="TransparentBox">
+        <div id="MainInfo">
+            <h1>FileSuite</h1>
+            <h2>Login</h2>
+            <div id="InputInfo">
+                <input class="FlatInputText" placeholder="Username" id="Username" type="text">
+                <input class="FlatInputText" placeholder="Password" id="Password" type="password">
+                <button class="FlatButtonLarge" id="LoginButton" type="button">Login</button>
+                <button onclick="GreenPop()" class="FlatButtonLarge" id="NewKeyButton" type="button">New Key</button>
+                <a target="blank_" href="https://bitbucket.org/samhamnam/">About</a>
+            </div>
+        </div>
+        <div id="TopOfBox"></div>
+        <diV id="Loopy">
+            <img src="/assets/plane.png">
+        </diV>
+        <div class="BlurBox"></div>
+    </div>
+    <div id="GreenBox" id="KeyInfo" style="z-index: 100;"></div>
+    <!--New key-->
+    <div id="NewKeyScreen" style="display:none; z-index:15;">
+        <div class="BlurBehind" style="background-image: url(assets/Backgrounds/pexels-photo-714256.jpeg); transform: scale(1.03); size: 100%; filter: blur(0px);"></div>
+        <div id="LoginBox" class="TransparentBox ">
+            <div id="MainInfo">
+                <h1>New key</h1>
+                <div id="InputInfo">
+                    <input class="FlatInputText" placeholder="Username" id="Username" type="text">
+                    <input class="FlatInputText" placeholder="Password" id="Password" type="password">
+                    <div id="Keystuff">
+                        <p><a href="https://www.javamex.com/tutorials/cryptography/rsa_key_length.shtml" target="blank_">Keysize: </a></p>
+                        <input type="range" min="1" max="4" value="2" step="any" class="slider" id="keySize">
+                        <div id="KeySizeBackground">
+                            <p id="keySizeText">2048</p>
+                        </div>
+                        <div id="KeySizeArrow"></div>
+                    </div>
+                    <button class="FlatButtonLarge" id="LoginButton" type="button">Create Key</button>
+                    <button onclick="GreenDis()" class="FlatButtonLarge" id="CancelButton" type="button">Cancel</button>
+                </div>
+            </div>
+            <div id="TopOfBox"></div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
