@@ -129,3 +129,30 @@
 .slider {
     margin-top: 12.5px;
 }
+
+.RoundButton {
+    width: 64px;
+    height: 64px;
+    background-color: #00A5FC;
+    color: white;
+    border-radius: 2000px;
+    text-align: center;
+    line-height: 64px;
+    font-size: 30px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.RoundButton:hover {
+    background-color: rgb(0, 109, 168);
+}
+
+.RoundButton:active {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.SidebarText {
+    font-size: 0px;
+    transition-duration: 0.3s;
+}
