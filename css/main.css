@@ -131,28 +131,49 @@
 }
 
 .RoundButton {
-    width: 64px;
-    height: 64px;
+    width: 60px;
+    height: 60px;
     background-color: #00A5FC;
     color: white;
-    border-radius: 2000px;
+    border-radius: 20px;
     text-align: center;
     line-height: 64px;
     font-size: 30px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition-duration: 0.3s;
     cursor: pointer;
+    margin: 2px;
+}
+
+.red {
+    background-color: rgb(252, 0, 0);
 }
 
 .RoundButton:hover {
-    background-color: rgb(0, 109, 168);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.25), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
 .RoundButton:active {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    background-color: rgb(0, 109, 168);
 }
 
 .SidebarText {
     font-size: 0px;
     transition-duration: 0.3s;
+}
+
+.Page {
+    position: absolute;
+}
+
+.Contentbox {
+    border-radius: 200px;
+    border: 3px rgb(226, 226, 226) solid;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.FlatRadiobox {
+    border: 100px;
 }

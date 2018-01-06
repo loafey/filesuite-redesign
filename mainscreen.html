@@ -15,26 +15,64 @@
 <body>
     <div id="Maincontent">
         <div id="TopClouds" style="display:none;"></div>
-        <div id="Padding" style="margin: 32px;">
+        <div id="Padding" style="margin-top: 32px; margin-left: 30px;">
             <!--Homescreen-->
-            <div id="Homescreen">
+            <div id="Homescreen" class="Page">
                 <h1 style="font-family: 'Spectral SC', serif;">FileSuite - Home</h1>
+                <div class="Contentbox">
+                    <h2>Settings:</h2>
+                    <div style="display:table;">
+                        <input class="FlatRadiobox" type="radio">
+                    </div>
+                </div>
             </div>
             <!--Encrypt-->
+            <div id="EncryptScreen" class="Page" style="display: none;">
+                <h1 style="font-family: 'Spectral SC', serif;">FileSuite - Encrypt</h1>
+                <div class="Contentbox">
+                    <p>hej</p>
+                </div>
+            </div>
+            <!--Decrypt-->
+            <div id="DecryptScreen" class="Page" style="display: none;">
+                <h1 style="font-family: 'Spectral SC', serif;">FileSuite - Decrypt</h1>
+            </div>
         </div>
     </div>
     <!--Sidebar-->
     <div id="Sidebar">
+        <h1 id="SidebarTitle">FileSuite</h1>
         <div style="padding-top: 100px;">
-            <div class="RoundButton">
+            <!--HomeButton-->
+            <div onclick="openPage('Homescreen')" class="RoundButton" id="HomeButton">
                 <p>
-                    <i class="large material-icons SidebarIcon">add</i>
+                    <i class="large material-icons SidebarIcon">home</i>
+                    <p class="SidebarText">Home</p>
+                </p>
+            </div>
+            <!--EncryptButton-->
+            <div onclick="openPage('EncryptScreen')" class="RoundButton" id="EncryptButton">
+                <p>
+                    <i class="large material-icons SidebarIcon">enhanced_encryption</i>
                     <p class="SidebarText">Encrypt</p>
                 </p>
             </div>
+            <!--DecryptButton-->
+            <div onclick="openPage('DecryptScreen')" class="RoundButton" id="DecryptButton">
+                <p>
+                    <i class="large material-icons SidebarIcon">no_encryption</i>
+                    <p class="SidebarText">Decrypt</p>
+                </p>
+            </div>
+        </div>
+        <!--ExitButton-->
+        <div onclick="closeWindow();" class="RoundButton red" id="ExitButton">
+            <p>
+                <i class="large material-icons SidebarIcon">close</i>
+                <p class="SidebarText">Exit</p>
+            </p>
         </div>
     </div>
     <div id="Overlay" style="position: fixed; width: 100%; height: 100%; top:0; left:0; background-color: rgba(255, 255, 255, 0);"></div>
+    <script src="js/mainscreen.js"></script>
 </body>
-
-</html>

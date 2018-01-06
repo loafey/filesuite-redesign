@@ -24,7 +24,9 @@
 }
 
 #Sidebar:hover .RoundButton {
-    width: 256px;
+    width: 246px;
+    margin: 2px;
+    border-radius: 200px;
 }
 
 #Sidebar:hover .SidebarText {
@@ -34,6 +36,20 @@
 #Sidebar:hover .SidebarIcon {
     position: absolute;
     color: transparent;
+}
+
+#Sidebar:hover #SidebarTitle {
+    color: Black;
+    left: 48px;
+}
+
+#SidebarTitle {
+    position: absolute;
+    color: transparent;
+    transition-duration: 0.3s;
+    left: 0px;
+    top: 32px;
+    font-family: 'Spectral SC', serif;
 }
 
 #Overlay {
@@ -60,4 +76,9 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+}
+
+#ExitButton {
+    position: relative;
+    bottom: 0px;
 }
