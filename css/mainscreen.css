@@ -24,9 +24,8 @@
 }
 
 #Sidebar:hover .RoundButton {
-    width: 246px;
+    width: 252px;
     margin: 2px;
-    border-radius: 200px;
 }
 
 #Sidebar:hover .SidebarText {
